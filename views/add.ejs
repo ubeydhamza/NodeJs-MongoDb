@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('./inc/head.ejs')%> 
+</head>
+<body>
+    <%-include('./inc/nav.ejs')%> 
+    <section>
+        <form action="/admin/add" method="post">
+            <input type="text" name="title" placeholder="baslik"required>
+            <input type="text" name="short" placeholder="aciklama" required>
+            <input type="text" name="long" placeholder="icerik" required>
+            <input type="text" name="writes" placeholder="yazar" required>
+            <input type="radio" name="categoryId" value="Doga">
+            <label for="categoryId">Doga</label><br>
+            <input type="radio" name="categoryId" value="Sanat">
+            <label for="categoryId">Sanat</label><br>
+            <input type="radio" name="categoryId" value="Teknoloji">
+            <label for="categoryId">Teknoloji</label> 
+            <input type="submit" value="Kaydet">
+        </form>
+    </section>
+</body>
+</html>
