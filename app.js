@@ -13,7 +13,7 @@ const {requireAuth,checkUser }= require('./middlewares/authMiddleware')
 const app = express()
 
 //db Connection
-const dbURL ="mongodb+srv://zobboX3:oMLgmqeeDe39MB1F@cluster0.gkpvrng.mongodb.net/?retryWrites=true&w=majority";
+const dbURL ="MOngoDb-Server";
 mongoose.connect(dbURL , {useNewUrlParser: true , useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))

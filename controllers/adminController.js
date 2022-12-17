@@ -17,6 +17,7 @@ const adminAdd = (req,res)=>{
     res.render('add',{title: 'Yeni yazi'})
 }
 
+//Burada hangi işlemi yapmalıyım??
 const adminAddPost = (req,res)=>{
     const blog = new Blog(req.body)
     Category.findById({name :'value'})
